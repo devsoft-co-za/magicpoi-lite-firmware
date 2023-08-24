@@ -53,7 +53,7 @@ To run this program, you will need the following:
 
 - It will retrieve timeline and colour sequence data from the server and display LED patterns on the MagicPoi Lite hardware.
 
-- To customize LED patterns or add additional functionality, refer to the program's source code.
+- To customize LED patterns or add additional functionality, refer to the program's source code or see the [documentation](https://devsoft-co-za.github.io/magicpoi-lite-firmware/)
 
 ## License
 
