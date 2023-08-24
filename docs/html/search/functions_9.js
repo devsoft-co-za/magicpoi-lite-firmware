@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatetoken_0',['updateToken',['../classTimelineManager.html#abc0e35901d8504fea6ec8efc56e3dfe8',1,'TimelineManager']]]
+  ['processtimelinedata_0',['processTimelineData',['../classTimelineManager.html#a47ad2d614e35946152b55b2678dd955b',1,'TimelineManager']]]
 ];

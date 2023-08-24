@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['processtimelinedata_0',['processTimelineData',['../classTimelineManager.html#a47ad2d614e35946152b55b2678dd955b',1,'TimelineManager']]]
+  ['halfstrobe_0',['Halfstrobe',['../classColourPatterns.html#ae7d4857a77e8c7375e753ce5344bed4b',1,'ColourPatterns']]]
 ];

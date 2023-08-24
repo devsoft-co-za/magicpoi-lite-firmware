@@ -1,6 +1,6 @@
 # MagicPoi PlatformIO Program
 
-This PlatformIO program controls MagicPoi Lite, an IOT device that displays LED patterns based on timeline data retrieved from a server. The program manages network connections, authentication, and LED pattern updates.
+PlatformIO based firmware for MagicPoi Lite, an IOT device that displays LED patterns based on timeline data retrieved from a server. The program manages network connections, authentication, and LED pattern updates.
 
 ## Table of Contents
 
