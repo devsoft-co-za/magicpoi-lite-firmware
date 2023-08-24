@@ -158,14 +158,14 @@ void TimelineManager::saveTimeline(const String& timelineData, String timelineFi
  * @brief Processes timeline data from a JSON string.
  *
  * This function processes timeline data provided as a JSON string. It extracts timing
- * information and RGB color values for each event in the timeline, populating the
+ * information and RGB colour values for each event in the timeline, populating the
  * respective arrays for further use.
  *
  * @param timelineData A JSON-formatted string containing timeline data.
  *
  * @note This function assumes that the JSON data has a specific format with timing
- *       information and RGB color values.
- * @note The `colours` and `timings` arrays are populated with the RGB color values and
+ *       information and RGB colour values.
+ * @note The `colours` and `timings` arrays are populated with the RGB colour values and
  *       corresponding timings, respectively.
  * @note If no data is present in the timeline, this function resets relevant flags and
  *       may clear the timeline file.

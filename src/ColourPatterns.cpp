@@ -38,14 +38,14 @@ interval(100)
  * @brief Runs a loading animation with RGB LEDs.
  *
  * This function runs a loading animation by sequentially lighting up the RGB LEDs in red,
- * green, and blue colors. It sets the red, green, and blue pins to different brightness
+ * green, and blue colours. It sets the red, green, and blue pins to different brightness
  * levels to create the loading effect.
  *
  * @note This function is designed for RGB LED control and creates a visual loading
- *       effect by cycling through the primary colors.
+ *       effect by cycling through the primary colours.
  * @note The loading animation consists of three phases: red, green, and blue, each
  *       lasting for 500 milliseconds.
- * @note You can customize the timing and colors of the loading animation as needed.
+ * @note You can customize the timing and colours of the loading animation as needed.
  */
 void ColourPatterns::runLoading(){
   analogWrite(redLed, 255);
@@ -63,15 +63,15 @@ void ColourPatterns::runLoading(){
 }
 
 /**
- * @brief Changes the color pattern of RGB LEDs based on the provided choice.
+ * @brief Changes the colour pattern of RGB LEDs based on the provided choice.
  *
- * This function allows you to change the color pattern of RGB LEDs based on a numeric
- * choice. It uses a switch statement to select a specific color pattern corresponding to
- * the choice and calls the respective color-setting function.
+ * This function allows you to change the colour pattern of RGB LEDs based on a numeric
+ * choice. It uses a switch statement to select a specific colour pattern corresponding to
+ * the choice and calls the respective colour-setting function.
  *
- * @param choice An integer representing the chosen color pattern (0-13).
+ * @param choice An integer representing the chosen colour pattern (0-13).
  *
- * @note The available color patterns are specified by the case values.
+ * @note The available colour patterns are specified by the case values.
  * @note Default behavior is to turn off all LEDs.
  * @see Red() - Sets the LEDs to red.
  * @see Green() - Sets the LEDs to green.
@@ -104,7 +104,7 @@ void ColourPatterns::changeColours(int choice) {
 // patterns here: 
 
 /**
- * @brief Sets the RGB LEDs to the color red.
+ * @brief Sets the RGB LEDs to the colour red.
  * 
  * @note 0a Red
  */
@@ -115,7 +115,7 @@ void ColourPatterns::Red() {
 }
 
 /**
- * @brief Sets the RGB LEDs to the color green.
+ * @brief Sets the RGB LEDs to the colour green.
  * 
  * @note 1b Green
  */
@@ -127,7 +127,7 @@ void ColourPatterns::Green()
 }
 
 /**
- * @brief Sets the RGB LEDs to the color blue.
+ * @brief Sets the RGB LEDs to the colour blue.
  * 
  * @note 2c Blue
  */
@@ -140,7 +140,7 @@ void ColourPatterns::Blue()
 
 
 /**
- * @brief Sets the RGB LEDs to the color yellow (red + green).
+ * @brief Sets the RGB LEDs to the colour yellow (red + green).
  * 
  * @note 3d Yellow
  */
@@ -152,7 +152,7 @@ void ColourPatterns::Yellow()
 }
 
 /**
- * @brief Sets the RGB LEDs to the color cyan (green + blue).
+ * @brief Sets the RGB LEDs to the colour cyan (green + blue).
  * 
  * @note 4e Cyan
  */
@@ -164,7 +164,7 @@ void ColourPatterns::Cyan()
 }
 
 /**
- * @brief Sets the RGB LEDs to the color magenta (red + blue).
+ * @brief Sets the RGB LEDs to the colour magenta (red + blue).
  * 
  * @note 5f Magenta
  */
@@ -176,7 +176,7 @@ void ColourPatterns::Magenta()
 }
 
 /**
- * @brief Sets the RGB LEDs to the color white (red + green + blue).
+ * @brief Sets the RGB LEDs to the colour white (red + green + blue).
  * 
  * @note 6g White
  */
@@ -188,19 +188,19 @@ void ColourPatterns::White()
 }
 // 7h Fade
 /**
- * @brief Creates a fading color pattern effect on RGB LEDs.
+ * @brief Creates a fading colour pattern effect on RGB LEDs.
  *
- * This function generates a fading color pattern on RGB LEDs by smoothly transitioning
- * between different colors. It adjusts the fade speed and direction, changing the color
+ * This function generates a fading colour pattern on RGB LEDs by smoothly transitioning
+ * between different colours. It adjusts the fade speed and direction, changing the colour
  * every time a certain time interval has passed.
  *
  * @note 7h Fade
  * @note This function uses a software PWM-like approach to achieve the fading effect.
  * @note The fade speed and direction are controlled by the `fadeSpeed` variable and the
  *       `upDownFade` flag.
- * @note The color transitions include red, yellow, green, cyan, blue, and magenta.
- * @note The function updates the LEDs' colors based on the current time and fade speed.
- * @note The `rainbowWay` variable tracks the current color transition in the pattern.
+ * @note The colour transitions include red, yellow, green, cyan, blue, and magenta.
+ * @note The function updates the LEDs' colours based on the current time and fade speed.
+ * @note The `rainbowWay` variable tracks the current colour transition in the pattern.
  *
  * @see Red() - Sets the LEDs to red.
  * @see Yellow() - Sets the LEDs to yellow.
@@ -328,16 +328,16 @@ void ColourPatterns::StrobePlus()
 }
 
 /**
- * @brief Generates a strobe-like color pattern effect on RGB LEDs.
+ * @brief Generates a strobe-like colour pattern effect on RGB LEDs.
  *
- * This function creates a strobe-like color pattern effect on RGB LEDs. However, the
+ * This function creates a strobe-like colour pattern effect on RGB LEDs. However, the
  * implementation currently appears to be commented out, and the function's code does
  * not contain any active logic.
  *
  * @note 9j RGBStrobe
  * @note The implementation is currently commented out, and there is no active code
  *       within this function.
- * @note It seems that the function was intended to control color transitions based on
+ * @note It seems that the function was intended to control colour transitions based on
  *       the `strobePlusOptions` variable, but this functionality is commented out.
  * @note If you intend to use this function, you may need to uncomment and modify the
  *       logic to achieve the desired strobe-like effect.
@@ -369,19 +369,19 @@ void ColourPatterns::RGBStrobe()
 }
 
 /**
- * @brief Generates a rainbow color pattern effect on RGB LEDs.
+ * @brief Generates a rainbow colour pattern effect on RGB LEDs.
  *
- * This function creates a rainbow color pattern effect on RGB LEDs by sequentially
- * transitioning between red, green, blue, cyan, yellow, and magenta colors. It updates
- * the color pattern at regular intervals based on the specified `interval`.
+ * This function creates a rainbow colour pattern effect on RGB LEDs by sequentially
+ * transitioning between red, green, blue, cyan, yellow, and magenta colours. It updates
+ * the colour pattern at regular intervals based on the specified `interval`.
  *
- * @param interval The time interval (in milliseconds) between color transitions.
+ * @param interval The time interval (in milliseconds) between colour transitions.
  *
  * @note 10k Rainbow
- * @note This function is designed to create a continuous rainbow-like color pattern.
- * @note The color transitions include red, green, blue, cyan, yellow, and magenta.
- * @note The `interval` parameter controls the time between color transitions.
- * @note The `rainbowWay` variable tracks the current color in the rainbow sequence.
+ * @note This function is designed to create a continuous rainbow-like colour pattern.
+ * @note The colour transitions include red, green, blue, cyan, yellow, and magenta.
+ * @note The `interval` parameter controls the time between colour transitions.
+ * @note The `rainbowWay` variable tracks the current colour in the rainbow sequence.
  *
  * @see Red() - Sets the LEDs to red.
  * @see Green() - Sets the LEDs to green.
@@ -430,15 +430,15 @@ void ColourPatterns::Rainbow()
 }
 
 /**
- * @brief Generates a half-strobe color pattern effect on RGB LEDs.
+ * @brief Generates a half-strobe colour pattern effect on RGB LEDs.
  *
- * This function creates a half-strobe color pattern effect on RGB LEDs by toggling
- * between red and blue colors at regular intervals. It alternates between turning
+ * This function creates a half-strobe colour pattern effect on RGB LEDs by toggling
+ * between red and blue colours at regular intervals. It alternates between turning
  * on and off the LEDs to create a flashing effect.
  *
  * @note 11L Halfstrobe
- * @note This function generates a two-color strobe effect between red and blue.
- * @note The `interval` parameter controls the time between color toggles.
+ * @note This function generates a two-colour strobe effect between red and blue.
+ * @note The `interval` parameter controls the time between colour toggles.
  * @note The `ledState` variable keeps track of the current LED state (ON/OFF).
  *
  * @see Red() - Sets the LEDs to red.
@@ -466,15 +466,15 @@ void ColourPatterns::Halfstrobe()
 }
 
 /**
- * @brief Generates a blue-green strobe color pattern effect on RGB LEDs.
+ * @brief Generates a blue-green strobe colour pattern effect on RGB LEDs.
  *
- * This function creates a blue-green strobe color pattern effect on RGB LEDs by toggling
- * between blue and green colors at regular intervals. It alternates between turning
+ * This function creates a blue-green strobe colour pattern effect on RGB LEDs by toggling
+ * between blue and green colours at regular intervals. It alternates between turning
  * on and off the LEDs to create a flashing effect.
  *
  * @note 12m BGStrobe
- * @note This function generates a two-color strobe effect between blue and green.
- * @note The `interval` parameter controls the time between color toggles.
+ * @note This function generates a two-colour strobe effect between blue and green.
+ * @note The `interval` parameter controls the time between colour toggles.
  * @note The `ledState` variable keeps track of the current LED state (ON/OFF).
  *
  * @see Blue() - Sets the LEDs to blue.
@@ -502,15 +502,15 @@ void ColourPatterns::BGStrobe()
 }
 
 /**
- * @brief Generates a green-red strobe color pattern effect on RGB LEDs.
+ * @brief Generates a green-red strobe colour pattern effect on RGB LEDs.
  *
- * This function creates a green-red strobe color pattern effect on RGB LEDs by toggling
- * between green and red colors at regular intervals. It alternates between turning
+ * This function creates a green-red strobe colour pattern effect on RGB LEDs by toggling
+ * between green and red colours at regular intervals. It alternates between turning
  * on and off the LEDs to create a flashing effect.
  *
  * @note 13n GRStrobe
- * @note This function generates a two-color strobe effect between green and red.
- * @note The `interval` parameter controls the time between color toggles.
+ * @note This function generates a two-colour strobe effect between green and red.
+ * @note The `interval` parameter controls the time between colour toggles.
  * @note The `ledState` variable keeps track of the current LED state (ON/OFF).
  *
  * @see Green() - Sets the LEDs to green.
