@@ -8,9 +8,12 @@
 .vscode/launch.json
 .vscode/ipch
 include/secrets.h
-documentation/
 old_git
 data
 lib
+doxygen
+# docs
+test
+
 
 

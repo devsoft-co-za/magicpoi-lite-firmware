@@ -11,9 +11,6 @@
 
 #include <LittleFS.h>
 
-// #include "ColourPatterns.h" // not here? 
-// #include "secrets.h"
-
 class TimelineManager {
 public:
     TimelineManager(const char* jwtFilePath, const char* serverIP, const char* email, const char* passwordJwt, WiFiClient client);
